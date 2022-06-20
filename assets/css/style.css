@@ -3,3 +3,9 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --blsc-tosca: '19A89D';
+    --black: '262626';
+    --semi-black: '5A5A5A';
+    --ultralight: 'B6B6B6';
+}
