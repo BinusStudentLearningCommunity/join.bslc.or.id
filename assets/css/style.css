@@ -83,15 +83,16 @@ h3{
 /* Cards */
 section{
     display: flex;
-    max-width: 70rem;
+    max-width: 90rem;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
     position: relative;
     top: -4rem;
 }
 .card{
-    max-width: 30rem;
+    width: 45%;
+    max-width: 38rem;
     outline: 1px solid #E6E6E6;
     padding: 50px;
     background-color: white;
@@ -131,7 +132,7 @@ section{
     display: flex;
 }
 .card__extra__title{
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 .card__extra__benefit{
     display: flex;
@@ -156,19 +157,19 @@ section{
 }
 .mini{
     display: flex;
+    height: max-content;
     width: max-content;
     align-items: center;
     padding: 10px;
     border-radius: 8px;
+    margin: 0.25rem 0.5rem;
+    margin-left: 0;
 }
 .mini__container{
     display: flex;
     flex-wrap: wrap;
 }
-.mini + .mini {
-    margin-top: .5rem;
-    margin-right: .5rem;
-}
+
 .mini p{
     margin-left: 0.5rem;
     color: var(--white);
