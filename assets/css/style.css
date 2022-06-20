@@ -91,7 +91,7 @@ section{
     top: -4rem;
 }
 .card{
-    width: 30rem;
+    max-width: 30rem;
     outline: 1px solid #E6E6E6;
     padding: 50px;
     background-color: white;
@@ -126,10 +126,13 @@ section{
     color: var(--ultralight);
 }
 
+/* Extra */
+.card__extra{
+    display: flex;
+}
 .card__extra__title{
     margin-bottom: 1rem;
 }
-/* Benefits */
 .card__extra__benefit{
     display: flex;
     align-items: center;
@@ -147,6 +150,45 @@ section{
 .card__description{
     font-size: 1.125rem;
 }
+/* Mini cards (Divisions) */
+.divisions{
+    margin-left: 2rem;
+}
+.mini{
+    display: flex;
+    width: max-content;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+.mini__container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mini + .mini {
+    margin-top: .5rem;
+    margin-right: .5rem;
+}
+.mini p{
+    margin-left: 0.5rem;
+    color: var(--white);
+}
+.mini img{
+    height: 1.2rem;
+}
+.mini__human-capital{
+    background-color: #FF8484;
+}
+.mini__learning{
+    background-color: #FFB084;
+}
+.mini__marketing{
+    background-color: #8498FF;
+}
+.mini__it{
+    background-color: #C184FF;
+}
+
 /* Register Button */
 .card__register__button{
     background-color: var(--bslc-tosca);
