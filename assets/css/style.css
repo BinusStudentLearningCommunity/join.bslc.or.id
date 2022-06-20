@@ -1,11 +1,171 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8rem;
+    padding: 1rem 4rem;
+    z-index: 100;
+    background-color: var(--white);
 }
-:root{
-    --blsc-tosca: '19A89D';
-    --black: '262626';
-    --semi-black: '5A5A5A';
-    --ultralight: 'B6B6B6';
+
+nav {
+    display: flex;
+    align-items: center;
+}
+nav p{
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+nav>div+div {
+    margin-left: 3rem;
+}
+
+.header__logo {
+    height: 100%;
+}
+
+.header__logo img {
+    height: 100%;
+}
+
+
+.navlink{
+    cursor: pointer;
+}
+.navlink p{
+    transition: 0.1s ease-in;
+}
+.navlink:not(#nav__join-us):hover p{
+    color:var(--bslc-tosca);
+}
+
+#nav__join-us{
+    background-color: var(--bslc-tosca);
+    padding: 1.125rem 2rem;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+#nav__join-us:hover{
+    background-color: var(--bslc-dark);
+}
+#nav__join-us p{
+    color: white;
+}
+
+/* Banner */
+.banner {
+    margin-top: 8rem;
+    background-color: var(--bslc-tosca);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    padding-bottom: 6rem;
+}
+.banner__container{
+    text-align: center;
+    color: white;
+    font-family: Inter;
+}
+h1{
+    font-weight: 700;
+}
+h1,
+h3{
+    font-size: 3rem;
+}
+
+/* Cards */
+section{
+    display: flex;
+    max-width: 70rem;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    top: -4rem;
+}
+.card{
+    width: 30rem;
+    outline: 1px solid #E6E6E6;
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+.card:hover{
+    outline: 1px solid var(--bslc-tosca);
+}
+.card:hover .card__header__text p{
+    color: var(--bslc-tosca);
+}
+.card > div+div{
+    margin-top: 2.625rem;
+}
+.card__header{
+    display: flex;
+    align-items: center;
+}
+.card__header__text{
+    margin-left: 1rem;
+}
+.card__header__text h2{
+    font-family: Rubik;
+    font-weight: 600;
+    font-size: 3rem;
+}
+.card__header__text p{
+    font-family: Inter;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    color: var(--ultralight);
+}
+
+.card__extra__title{
+    margin-bottom: 1rem;
+}
+/* Benefits */
+.card__extra__benefit{
+    display: flex;
+    align-items: center;
+    height: 1.5rem;
+}
+.card__extra__benefit p{
+    margin-left: 0.5rem;
+}
+.card__extra__benefit img{
+    height: 100%;
+}
+
+
+/* Description */
+.card__description{
+    font-size: 1.125rem;
+}
+/* Register Button */
+.card__register__button{
+    background-color: var(--bslc-tosca);
+    display: inline-block;
+    padding: 1.125rem 2rem;  
+    border-radius: 10px; 
+    cursor: pointer;
+}
+.card__register__button:hover{
+    background-color: var(--bslc-dark);
+}
+.card__register__button:active{
+    background-color: var(--white);
+    outline: 1px solid var(--bslc-dark);
+}
+.card__register__button:active p{
+    color: var(--bslc-dark);
+}
+.card__register__button p{
+    color: var(--white);
+    font-size: 1.125rem;
 }
