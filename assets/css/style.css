@@ -54,9 +54,9 @@ header:hover h1{
     font-family: Inter;
 }
 
-.banner h1,
 .banner h3{
-    font-size: 2rem;
+    margin-top: 0.25rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 .banner h1{
@@ -198,10 +198,10 @@ section{
 }
 .card__register__button:active{
     background-color: var(--white);
-    outline: 1px solid var(--bslc-dark);
+    outline: 1px solid var(--bslc-light);
 }
 .card__register__button:active p{
-    color: var(--bslc-dark);
+    color: var(--bslc-light);
 }
 .card__register__button p{
     color: var(--white);

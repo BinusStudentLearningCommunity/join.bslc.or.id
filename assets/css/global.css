@@ -5,6 +5,7 @@
     padding: 0;
     font-weight: 400;
     font-family: Inter;
+    -webkit-font-smoothing: antialiased;
 }
 :root{
     --bslc-dark: #095754;
@@ -14,6 +15,7 @@
     --ultralight: #B6B6B6;
     --white: #FFFFFE;
     --bslc-lime: #D6E026;
+    
 }
 strong{
     font-weight: 700;
