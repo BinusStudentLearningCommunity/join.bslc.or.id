@@ -7,8 +7,8 @@
     font-family: Inter;
 }
 :root{
-    --bslc-tosca: #19A89D;
-    --bslc-dark: #0C7C77;
+    --bslc-dark: #095754;
+    --bslc-light: #19A89D;
     --black: #262626;
     --semi-black: #5A5A5A;
     --ultralight: #B6B6B6;
@@ -20,6 +20,7 @@ strong{
 }
 p{
     color: var(--black);
+    line-height: 1.5;
 }
 img{
     display: block;
