@@ -186,6 +186,21 @@ section{
 }
 
 /* Register Button */
+.card__register{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.closed p{
+    color: var(--ultralight)
+}
+.closed .card__register__button{
+    background-color: var(--ultralight);
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+
 .card__register__button{
     background-color: var(--bslc-dark);
     display: inline-block;
